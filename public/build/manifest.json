@@ -1,0 +1,37 @@
+{
+  "resources/assets/css/material-dashboard.css": {
+    "file": "assets/material-dashboard-52fa2655.css",
+    "isEntry": true,
+    "src": "resources/assets/css/material-dashboard.css"
+  },
+  "resources/assets/css/nucleo-icons.css": {
+    "file": "assets/nucleo-icons-40f09e38.css",
+    "isEntry": true,
+    "src": "resources/assets/css/nucleo-icons.css"
+  },
+  "resources/assets/css/nucleo-svg.css": {
+    "file": "assets/nucleo-svg-89acc85b.css",
+    "isEntry": true,
+    "src": "resources/assets/css/nucleo-svg.css"
+  },
+  "resources/assets/fonts/nucleo-icons.eot": {
+    "file": "assets/nucleo-icons-f899f875.eot",
+    "src": "resources/assets/fonts/nucleo-icons.eot"
+  },
+  "resources/assets/fonts/nucleo-icons.svg": {
+    "file": "assets/nucleo-icons-be977573.svg",
+    "src": "resources/assets/fonts/nucleo-icons.svg"
+  },
+  "resources/assets/fonts/nucleo-icons.ttf": {
+    "file": "assets/nucleo-icons-655956cd.ttf",
+    "src": "resources/assets/fonts/nucleo-icons.ttf"
+  },
+  "resources/assets/fonts/nucleo-icons.woff": {
+    "file": "assets/nucleo-icons-daa807b2.woff",
+    "src": "resources/assets/fonts/nucleo-icons.woff"
+  },
+  "resources/assets/fonts/nucleo-icons.woff2": {
+    "file": "assets/nucleo-icons-3180896c.woff2",
+    "src": "resources/assets/fonts/nucleo-icons.woff2"
+  }
+}
