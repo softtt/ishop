@@ -2,8 +2,10 @@
 
 namespace App\Http\Middleware;
 
+//use App\Models\Role;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
+use Tighten\Ziggy\Ziggy;
 
 class HandleInertiaRequests extends Middleware
 {
@@ -26,17 +28,23 @@ class HandleInertiaRequests extends Middleware
         return parent::version($request);
     }
 
-    /**
-     * Define the props that are shared by default.
-     *
-     * @see https://inertiajs.com/shared-data
-     *
-     * @return array<string, mixed>
-     */
     public function share(Request $request): array
     {
+        $ziggy = new Ziggy($group = null, $request->url());
+
         return array_merge(parent::share($request), [
-            //
+            'auth' => [
+                'user' => $request->user(),
+            ],
+//            'permissions' => [
+//                'isAdmin' => $request->user() ? $request->user()->hasRole(Role::ADMIN) : false,
+//                'isAdminOrManager' => $request->user() ? $request->user()->hasRole([Role::ADMIN, Role::MANAGER]) : false,
+//            ],
+            'flash' => [
+                'message' => session('message'),
+                'success' => session('success')
+            ],
+            'ziggy' => $ziggy->toArray()
         ]);
     }
 }
