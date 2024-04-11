@@ -54,19 +54,19 @@
 </style>
 
 <script>
-// import GuestLayout from "@/Layouts/Authenticated.vue";
-// import GuestLayout from "@/Layouts/Guest.vue";
+
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import BreezeApplicationLogo from '@/Components/ApplicationLogo.vue'
 import ButtonLink from "@/Components/ButtonLink.vue"
+import {route} from "ziggy-js";
 
 export default {
+  methods: {route},
     components: {
       Head,
       Link,
       BreezeApplicationLogo,
-      ButtonLink
-    //   GuestLayout
+      ButtonLink,
     },
     
 }

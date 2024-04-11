@@ -23,3 +23,10 @@ mix.js('resources/js/app.js', 'public/js').vue()
     ])
     .sass('resources/sass/app.scss', 'public/css')
     .webpackConfig(require('./webpack.config'));
+
+mix.webpackConfig({
+    devServer: {
+        host: '0.0.0.0',
+        port: 80,
+    },
+});
