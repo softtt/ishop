@@ -15,16 +15,11 @@
                                 <h1 class="logo-font text-3xl"> ISTORE <br> УЖ/ЁЖ </h1>
                         </div>
                         <div class="content py-10">
-                            <br>
                             <div class="flex justify-center">
-                                <ButtonLink :href="route('login')" class="mx-3">
-                                    LOGIN
-                                </ButtonLink>
-                                
-                                <ButtonLink :href="route('register')" class="mx-3">
-                                    REGISTER
-                                </ButtonLink>
-                                </div>
+                                <Button @click="goToCrm" class="mx-3">
+                                    Create Store
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -57,16 +52,21 @@
 
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import BreezeApplicationLogo from '@/Components/ApplicationLogo.vue'
-import ButtonLink from "@/Components/ButtonLink.vue"
+import Button from "@/Components/Button.vue"
 import {route} from "ziggy-js";
 
 export default {
-  methods: {route},
+  methods: {
+    route,
+    goToCrm() {
+      window.location = route('crm.welcome');
+    }
+  },
     components: {
       Head,
       Link,
       BreezeApplicationLogo,
-      ButtonLink,
+      Button,
     },
     
 }

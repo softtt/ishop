@@ -15,10 +15,7 @@ use App\Http\Controllers\ProfileController;
 |
 */
 Route::domain(config('custom.app_domain'))->get('/', function () {
-        return Inertia::render('Welcome', [
-            'canLogin' => Route::has('login'),
-            'canRegister' => Route::has('register'),
-    ]);
+        return Inertia::render('Welcome');
 })->name('welcome');
 
 

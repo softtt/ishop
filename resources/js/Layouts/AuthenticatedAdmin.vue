@@ -1,19 +1,48 @@
-<script setup>
+<script>
 import {ref} from 'vue';
 import BreezeApplicationLogo from '@/Components/ApplicationLogo.vue';
 import BreezeDropdown from '@/Components/Dropdown.vue';
 import BreezeDropdownLink from '@/Components/DropdownLink.vue';
 import BreezeNavLink from '@/Components/NavLink.vue';
 import BreezeResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
-
 import {Link} from '@inertiajs/inertia-vue3';
 import {route} from "ziggy-js";
+import Dropdown from '@/Shared/Dropdown'
+import FlashMessages from "@/Shared/FlashMessages";
+import {Ziggy} from "../ziggy";
 
-const showingNavigationDropdown = ref(false);
+export default {
+  components: {
+    BreezeApplicationLogo,
+    BreezeDropdown,
+    BreezeDropdownLink,
+    BreezeNavLink,
+    BreezeResponsiveNavLink,
+    Link,
+    Dropdown,
+    FlashMessages,
+  },
 
-const goToFront = () => {
-  window.location = route('dashboard')
-}
+  props: ['isSuperAdmin'],
+
+  setup() {
+    const showingNavigationDropdown = ref(false);
+
+    const goToFront = () => {
+      window.location = route('dashboard');
+    };
+
+    const goToCrm = () => {
+      window.location = route('crm.dashboard');
+    };
+
+    return {
+      showingNavigationDropdown,
+      goToFront,
+      goToCrm
+    };
+  }
+};
 </script>
 
 <template>
@@ -38,6 +67,14 @@ const goToFront = () => {
                         class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-dark hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                   Store Front
                 </button>
+
+                <button @click="goToCrm" type="button"
+                        class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-dark hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                  Crm
+                </button>
+                <BreezeNavLink :href="route('users.index')" v-if="$page.props.isSuperAdmin">
+                  Users
+                </BreezeNavLink>
                 <div class="hidden sm:flex sm:items-center sm:ml-6">
                   <!-- Settings Dropdown -->
                   <div class="ml-3 relative">
@@ -210,16 +247,4 @@ const goToFront = () => {
     </div>
   </div>
 </template>
-
-<script>
-import Dropdown from '@/Shared/Dropdown'
-import FlashMessages from "@/Shared/FlashMessages";
-
-export default {
-  components: {
-    Dropdown,
-    FlashMessages,
-  }
-}
-</script>
 

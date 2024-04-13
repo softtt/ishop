@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 //use App\Models\Role;
+use App\Enums\Roles;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 use Tighten\Ziggy\Ziggy;
@@ -36,6 +37,7 @@ class HandleInertiaRequests extends Middleware
             'auth' => [
                 'user' => $request->user(),
             ],
+            'isSuperAdmin' => (auth()->check() ? auth()->user()->hasRole(Roles::SuperAdmin->value) : false),
             'flash' => function () use ($request) {
                 return [
                     'success' => $request->session()->get('success'),

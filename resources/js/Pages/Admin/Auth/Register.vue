@@ -58,7 +58,7 @@
 
             <div class="flex items-center justify-end sm:justify-start mt-4">
                 <Link
-                    :href="route('login')"
+                    :href="route('crm.login')"
                     class="underline text-sm text-gray-600 hover:text-gray-900"
                 >
                     Already registered?
@@ -110,7 +110,7 @@ export default {
 
     methods: {
         submit() {
-            this.form.post(this.route("register"), {
+            this.form.post(this.route("crm.register"), {
                 onFinish: () =>
                     this.form.reset("password", "password_confirmation"),
             });

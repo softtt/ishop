@@ -9,8 +9,8 @@ import { Link } from '@inertiajs/inertia-vue3';
 
 const showingNavigationDropdown = ref(false);
 
-const goToAdmin = () => {
-    window.location = route('admin.dashboard')
+const goToCrm = () => {
+    window.location = route('crm.dashboard')
 }
 </script>
 
@@ -53,16 +53,9 @@ const goToAdmin = () => {
                                         </span>
                                     </template>
                                     <template #content>
-<!--                                      v-if="$page.props.acl.is_admin"-->
-                                      <button @click="goToAdmin" type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
-                                        Admin
+                                      <button @click="goToCrm" type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                                        Edit Store
                                       </button>
-<!--                                      <BreezeDropdownLink   as="button" replace>-->
-<!--                                            -->
-<!--                                        </BreezeDropdownLink>-->
-                                        <BreezeDropdownLink :href="route('logout')" method="post" as="button">
-                                            Log Out
-                                        </BreezeDropdownLink>
                                     </template>
                                 </BreezeDropdown>
                             </div>

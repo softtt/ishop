@@ -24,7 +24,7 @@
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-vue": "^7.20.0",
         "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
+        "lodash": "^4.17.21",
         "postcss": "^8.4.38",
         "postcss-apply": "^0.12.0",
         "postcss-import": "^12.0.1",
