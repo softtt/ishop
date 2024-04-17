@@ -1,13 +1,10 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedAdmin.vue';
-import { Head, Link, useForm } from "@inertiajs/inertia-vue3";
-import { onBeforeMount } from 'vue';
+import {Head, Link, useForm, usePage} from "@inertiajs/inertia-vue3";
 import ButtonLink from "@/Components/ButtonLink.vue"
 import Button from "@/Components/Button.vue"
+import {route} from "ziggy-js";
 
-onBeforeMount(() => {
-  console.log(props.users)
-})
 
 const props = defineProps({
   users: {
@@ -17,15 +14,29 @@ const props = defineProps({
 });
 const form = useForm({});
 
-function destroy(id) {
+const destroy = function (id) {
   if (confirm("Are you sure you want to Delete")) {
     form.delete(route("users.destroy", id));
   }
 }
+
+const grantAdminAccess = function (id) {
+  form.post(route("users.toggleAdminAccess", id));
+}
+
+const removeAdminAccess = function (id) {
+  if (id === usePage().props.value.auth.user.id) {
+    alert('You can not get rid of this honor');
+
+    return;
+  }
+
+  form.post(route("users.toggleAdminAccess", id));
+}
 </script>
 
 <template>
-  <Head title="Dashboard" />
+  <Head title="Dashboard"/>
 
   <AuthenticatedLayout>
     <template #header>
@@ -33,7 +44,7 @@ function destroy(id) {
         Users
       </h2>
     </template>
-    <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
+    <div class="overflow-hidden mt-6 bg-white shadow-sm sm:rounded-lg">
       <div class="p-6 bg-white border-b border-gray-200">
         <div class="mb-2">
           <ButtonLink :href="route('users.create')">Add User</ButtonLink>
@@ -80,7 +91,8 @@ function destroy(id) {
               </th>
 
               <td class="px-6 py-4">
-                <ButtonLink :href="route('users.edit', {user: user.id})" class="px-4 py-2 text-white bg-blue-600 rounded-lg">
+                <ButtonLink :href="route('users.edit', {user: user.id})"
+                            class="px-4 py-2 text-white bg-blue-600 rounded-lg">
                   Edit
                 </ButtonLink>
               </td>
@@ -90,10 +102,10 @@ function destroy(id) {
                 </Button>
               </td>
               <td class="px-6 py-4">
-                <Button v-if="user.is_admin" class="bg-red-700" @click="destroy(user.id)">
+                <Button v-if="user.is_admin" class="bg-red-700" @click="removeAdminAccess(user.id)">
                   Remove Admin Access
                 </Button>
-                <Button v-else class="bg-red-700" @click="destroy(user.id)">
+                <Button v-else class="bg-red-700" @click="grantAdminAccess(user.id)">
                   Grant Admin Access
                 </Button>
               </td>

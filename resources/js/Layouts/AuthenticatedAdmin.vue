@@ -8,11 +8,11 @@ import BreezeResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import {Link} from '@inertiajs/inertia-vue3';
 import {route} from "ziggy-js";
 import Dropdown from '@/Shared/Dropdown'
-import FlashMessages from "@/Shared/FlashMessages";
-import {Ziggy} from "../ziggy";
+import FlashMessage from "@/Components/FlashMessage.vue";
 
 export default {
   components: {
+    FlashMessage,
     BreezeApplicationLogo,
     BreezeDropdown,
     BreezeDropdownLink,
@@ -20,7 +20,6 @@ export default {
     BreezeResponsiveNavLink,
     Link,
     Dropdown,
-    FlashMessages,
   },
 
   props: ['isSuperAdmin'],
@@ -72,80 +71,12 @@ export default {
                         class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-dark hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                   Crm
                 </button>
-                <BreezeNavLink :href="route('users.index')" v-if="$page.props.isSuperAdmin">
+                <BreezeNavLink :href="route('users.index')">
                   Users
                 </BreezeNavLink>
-                <div class="hidden sm:flex sm:items-center sm:ml-6">
-                  <!-- Settings Dropdown -->
-                  <div class="ml-3 relative">
-                    <BreezeDropdown align="right" width="48">
-                      <template #trigger>
-                                                <span class="inline-flex rounded-md">
-                                                    <button type="button"
-                                                            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
-                                                        Catalog
-                                                        <svg class="ml-2 -mr-0.5 h-4 w-4"
-                                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                             fill="currentColor">
-                                                            <path fill-rule="evenodd"
-                                                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                                  clip-rule="evenodd"/>
-                                                        </svg>
-                                                    </button>
-                                                </span>
-                      </template>
-
-                      <template #content>
-                        <BreezeDropdownLink :href="route('admin.dashboard')">
-                          Attributes
-                        </BreezeDropdownLink>
-                        <BreezeDropdownLink :href="route('admin.dashboard')">
-                          Brands
-                        </BreezeDropdownLink>
-                        <BreezeDropdownLink :href="route('admin.dashboard')">
-                          Categories
-                        </BreezeDropdownLink>
-                        <BreezeDropdownLink :href="route('admin.dashboard')">
-                          Products
-                        </BreezeDropdownLink>
-                      </template>
-                    </BreezeDropdown>
-                  </div>
-                </div>
-                <div class="hidden sm:flex sm:items-center sm:ml-6">
-                  <!-- Settings Dropdown -->
-                  <div class="ml-3 relative">
-                    <BreezeDropdown align="right" width="48">
-                      <template #trigger>
-                                                <span class="inline-flex rounded-md">
-                                                    <button type="button"
-                                                            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
-                                                        ACL
-                                                        <svg class="ml-2 -mr-0.5 h-4 w-4"
-                                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                             fill="currentColor">
-                                                            <path fill-rule="evenodd"
-                                                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                                  clip-rule="evenodd"/>
-                                                        </svg>
-                                                    </button>
-                                                </span>
-                      </template>
-
-                      <template #content>
-                        <BreezeDropdownLink :href="route('admin.dashboard')">
-                          Users
-                        </BreezeDropdownLink>
-                        <BreezeDropdownLink :href="route('admin.dashboard')">
-                          Permissions
-                        </BreezeDropdownLink>
-                        <BreezeDropdownLink :href="route('admin.dashboard')">
-                          Roles
-                        </BreezeDropdownLink>
-                      </template>
-                    </BreezeDropdown>
-                  </div>
-                </div>
+                <BreezeNavLink :href="route('stores.index')">
+                  Stores
+                </BreezeNavLink>
               </div>
             </div>
 
@@ -225,7 +156,7 @@ export default {
           </div>
         </header>
 
-        <div v-if="$page.props.flash.success !== null || $page.props.flash.error !== null"
+        <div v-if="$page.props.flash.message !== null || $page.props.flash.error !== null"
              class="py-2 md:flex-1 md:p-8 md:overflow-y-auto">
           <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <flash-messages/>

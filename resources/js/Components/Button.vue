@@ -1,7 +1,7 @@
 <template>
-    <button
-        :type="type"
-        class="
+  <button
+      :type="type"
+      class="
             bg-button
             inline-flex
             items-center
@@ -18,28 +18,29 @@
             ease-in-out
             duration-150
         "
-    >
-        <slot />
-    </button>
+  >
+    <slot/>
+  </button>
 </template>
 
 <style>
- .bg-button {
-    background-color: #9cb2bf;
+.bg-button {
+  background-color: #9cb2bf;
 }
+
 .bg-button:active {
-    background-color: #c5d4db;
+  background-color: #c5d4db;
 }
 
 </style>
 
 <script>
 export default {
-    props: {
-        type: {
-            type: String,
-            default: "submit",
-        },
+  props: {
+    type: {
+      type: String,
+      default: "submit",
     },
+  },
 };
 </script> 

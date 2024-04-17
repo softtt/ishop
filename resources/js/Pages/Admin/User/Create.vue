@@ -1,5 +1,5 @@
 <template>
-  <Head title="Register" />
+  <Head title="Register"/>
   <AuthenticatedLayout>
     <template #header>
       <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -8,10 +8,10 @@
     </template>
 
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 flex flex-col justify-center items-center">
-      <BreezeValidationErrors class="mb-4" />
+      <BreezeValidationErrors class="mb-4"/>
       <form @submit.prevent="submit" class="m-4 text-dark w-2/5">
         <div>
-          <BreezeLabel for="name" value="Name" />
+          <BreezeLabel for="name" value="Name"/>
           <BreezeInput
               id="name"
               type="text"
@@ -24,7 +24,7 @@
         </div>
 
         <div class="mt-4">
-          <BreezeLabel for="email" value="Email" />
+          <BreezeLabel for="email" value="Email"/>
           <BreezeInput
               id="email"
               type="email"
@@ -36,7 +36,7 @@
         </div>
 
         <div class="mt-4">
-          <BreezeLabel for="password" value="Password" />
+          <BreezeLabel for="password" value="Password"/>
           <BreezeInput
               id="password"
               type="password"
@@ -77,11 +77,10 @@
 
 <script>
 import BreezeButton from "@/Components/Button.vue";
-import BreezeGuestLayout from "@/Layouts/Guest.vue";
 import BreezeInput from "@/Components/Input.vue";
 import BreezeLabel from "@/Components/Label.vue";
 import BreezeValidationErrors from "@/Components/ValidationErrors.vue";
-import { Head, Link } from "@inertiajs/inertia-vue3";
+import {Head, Link} from "@inertiajs/inertia-vue3";
 import AuthenticatedLayout from '@/Layouts/AuthenticatedAdmin.vue';
 
 export default {

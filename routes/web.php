@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StoreFrontController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +21,10 @@ Route::domain(config('custom.app_domain'))->get('/', function () {
 
 
 Route::domain(config('custom.app_domain'))->middleware(['auth'])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->middleware(['verified'])->name('dashboard');
+    Route::get('/store/{category:slug?}', [StoreFrontController::class, 'index'])->middleware(['verified'])->name('dashboard');
+    Route::post('/checkout', [StoreFrontController::class, 'checkout'])->middleware(['verified'])->name('checkout');
+    Route::post('/placeOrder', [StoreFrontController::class, 'placeOrder'])->middleware(['verified'])->name('placeOrder');
+    Route::get('/productDetails/{product:slug}/{category:slug?}', [StoreFrontController::class, 'productDetails'])->middleware(['verified'])->name('productDetails');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
