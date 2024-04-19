@@ -6,20 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="45a4dae8-faca-46af-bfcf-bb2f9a7ff3ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/AuthenticatedSessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/AuthenticatedSessionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/RegisteredUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Crm/Auth/AuthenticatedSessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Crm/Auth/AuthenticatedSessionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Crm/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Crm/Auth/RegisteredUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/custom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/Auth/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/Auth/Register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Crm/Auth/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Crm/Auth/Register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/ziggy.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ziggy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/crm/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/crm/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/crm/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/crm/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +219,7 @@
       <updated>1712647177506</updated>
       <workItem from="1712647179244" duration="76439000" />
       <workItem from="1712841480695" duration="143780000" />
-      <workItem from="1713257703462" duration="69525000" />
+      <workItem from="1713257703462" duration="77973000" />
     </task>
     <servers />
   </component>
