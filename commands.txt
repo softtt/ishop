@@ -1,0 +1,48 @@
+connect to ec2 instance from folder where istore.pem located
+
+
+  ssh -i "istore.pem" ubuntu@ec2-51-20-144-244.eu-north-1.compute.amazonaws.com
+
+
+sudo service apache2 start
+
+sudo service apache2 status
+
+sudo apt install php
+
+sudo apt install mysql-server
+
+sudo apt-get install php-mysql
+
+
+cat githubkey.pub >> authorized_keys
+
+ Check if SSH Agent is running
+
+eval "$(ssh-agent -s)"
+
+
+ Add key
+ ssh-add ~/.ssh/githubkey
+
+Check is identity present in ssh agent
+ssh-add  -l
+
+
+
+sudo apt-get install php-curl
+sudo apt-get install php-xml
+
+
+Login to mysql under superuser
+
+sudo mysql -u root -p
+
+
+mysql cridentials
+
+user:  sammy
+database:  istore
+host:  localhost
+password:  password
+

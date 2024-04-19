@@ -6,7 +6,7 @@ use App\Http\Controllers\Crm\Auth\RegisteredUserController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::domain(config('custom.crm_domain'))->group(function () {
+Route::prefix('crm')->group(function () {
     Route::get('/register', [RegisteredUserController::class, 'create'])
         ->middleware('guest')
         ->name('crm.register');

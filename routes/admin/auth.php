@@ -5,7 +5,7 @@ use App\Http\Controllers\Admin\Auth\RegisteredUserController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::domain(config('custom.admin_domain'))->group(function (){
+Route::prefix('admin')->group(function (){
     Route::get('/register', [RegisteredUserController::class, 'create'])
         ->middleware('guest')
         ->name('register');

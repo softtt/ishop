@@ -47,6 +47,6 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
         Auth::login($user);
 
-        return redirect('crm.dashboard');
+        return redirect(route('crm.dashboard'));
     }
 }

@@ -9,22 +9,22 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\Crm\DashboardController;
 
-Route::domain(config('custom.crm_domain'))->get('/', function () {
+Route::prefix('crm')->get('/', function () {
     return Inertia::render('Crm/Welcome', [
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
 })->name('crm.welcome');
 
-Route::domain(config('custom.crm_domain'))
+Route::prefix('crm')
     ->middleware(['auth'])
     ->resource('categories', CategoryController::class)->except('show');
 
-Route::domain(config('custom.crm_domain'))
+Route::prefix('crm')
     ->middleware(['auth'])
     ->resource('products', ProductController::class)->except(['show', 'update', 'index']);
 
-Route::domain(config('custom.crm_domain'))->middleware(['auth'])->group(function() {
+Route::prefix('crm')->middleware(['auth'])->group(function() {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('crm.dashboard');
     Route::post('categories/toggleActiveStatus/{category}', [CategoryController::class, 'toggleActiveStatus'])
         ->name('categories.toggleActiveStatus');

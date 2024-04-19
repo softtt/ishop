@@ -5,51 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45a4dae8-faca-46af-bfcf-bb2f9a7ff3ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca2c54a2-bde7-4be3-bc88-2496536bc1c2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ca2c54a2-bde7-4be3-bc88-2496536bc1c2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/HandleInertiaRequests.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/HandleInertiaRequests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/PermissionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PermissionService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/AuthenticatedSessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/AuthenticatedSessionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/RegisteredUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Crm/Auth/AuthenticatedSessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Crm/Auth/AuthenticatedSessionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Crm/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Crm/Auth/RegisteredUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/custom.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/ApplicationLogo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/ApplicationLogo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/Button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/Button.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/ButtonLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/ButtonLink.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/Checkbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/Checkbox.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/Dropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/Dropdown.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/DropdownLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/DropdownLink.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/Input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/InputError.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/InputError.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/Label.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/Label.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/NavLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/NavLink.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/ResponsiveNavLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/ResponsiveNavLink.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/ValidationErrors.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/ValidationErrors.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/Authenticated.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/Authenticated.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AuthenticatedAdmin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AuthenticatedAdmin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AuthenticatedCrm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AuthenticatedCrm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/Guest.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/Guest.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/User/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/User/Create.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/User/Edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/User/Edit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/User/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/User/List.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/Welcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/Welcome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Crm/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Crm/Dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Profile.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Welcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Welcome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Admin/Auth/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Admin/Auth/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Crm/Auth/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Crm/Auth/Register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/ziggy.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ziggy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/crm/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/crm/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/crm/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/crm/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +233,7 @@
       <updated>1712647177506</updated>
       <workItem from="1712647179244" duration="76439000" />
       <workItem from="1712841480695" duration="143780000" />
-      <workItem from="1713257703462" duration="44951000" />
+      <workItem from="1713257703462" duration="69525000" />
     </task>
     <servers />
   </component>

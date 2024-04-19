@@ -3,7 +3,7 @@
 
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 flex flex-col justify-center items-center">
         <BreezeValidationErrors class="mb-4" />
-        <form @submit.prevent="submit" class="m-4 text-dark w-2/5">
+        <form @submit.prevent="submit" class="m-4 text-dark w-full">
             <div>
                 <BreezeLabel for="name" value="Name" />
                 <BreezeInput
