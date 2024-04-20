@@ -25895,7 +25895,7 @@ __webpack_require__.r(__webpack_exports__);
     };
     var form = (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_5__.useForm)({});
     var proceedToCheckout = function proceedToCheckout() {
-      form.post((0,ziggy_js__WEBPACK_IMPORTED_MODULE_4__.route)('checkout', {
+      form.get((0,ziggy_js__WEBPACK_IMPORTED_MODULE_4__.route)('checkout', {
         cart: cart
       }));
     };

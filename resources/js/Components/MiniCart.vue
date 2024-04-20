@@ -86,7 +86,7 @@ export default {
     const form = useForm({});
 
     const proceedToCheckout = () => {
-      form.post(route('checkout', {cart: cart}));
+      form.get(route('checkout', {cart: cart}));
     };
 
     return {isPopupOpen, cart, updateProductAmount, togglePopup, removeProductFromCart, proceedToCheckout};
