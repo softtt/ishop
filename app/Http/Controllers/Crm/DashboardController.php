@@ -17,7 +17,8 @@ class DashboardController extends Controller
      */
     public function index(DashboardService $service): Response
     {
-        $statistics = $service->getDashboardStatistics();
+        $storeId = auth()->id();
+        $statistics = $service->getDashboardStatistics($storeId);
 
         return Inertia::render('Crm/Dashboard', ['statistics' => $statistics]);
     }

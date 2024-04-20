@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45a4dae8-faca-46af-bfcf-bb2f9a7ff3ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca2c54a2-bde7-4be3-bc88-2496536bc1c2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ca2c54a2-bde7-4be3-bc88-2496536bc1c2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/MiniCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/MiniCart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/ziggy.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ziggy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Crm/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Crm/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/DashboardService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/DashboardService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/commands.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +222,7 @@
       <updated>1712647177506</updated>
       <workItem from="1712647179244" duration="76439000" />
       <workItem from="1712841480695" duration="143780000" />
-      <workItem from="1713257703462" duration="93351000" />
+      <workItem from="1713257703462" duration="96261000" />
     </task>
     <servers />
   </component>

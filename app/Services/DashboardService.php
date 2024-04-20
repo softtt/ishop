@@ -11,13 +11,14 @@ class DashboardService
     /**
      * Get dashboard statistics
      *
+     * @param int $storeId
      * @return array
      */
-    public function getDashboardStatistics(): array
+    public function getDashboardStatistics(int $storeId): array
     {
-        $statistics['categoriesCount'] = Category::count();
-        $statistics['productsCount'] = Product::count();
-        $statistics['ordersCount'] = Order::count();
+        $statistics['categoriesCount'] = Category::where(['store_id'  => $storeId])->count();
+        $statistics['productsCount'] = Product::where(['store_id'  => $storeId])->count();
+        $statistics['ordersCount'] = Order::where(['store_id'  => $storeId])->count();
 
         return $statistics;
     }
